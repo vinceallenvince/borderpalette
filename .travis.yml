@@ -11,16 +11,20 @@ after_deploy:
 - echo 'done!'
 - ./deploy-gh-pages.sh
 deploy:
-  - provider: npm
-    email: vince@vinceallen.com
-    api_key:
-      secure: i9HGZBNzSWkf9Il1ehbMkrUyreqBgGG1czQYWNA68Kxiad/1F0CAi1MdeCZgNXTvXMn7KcAa4l+V0ynnFzlUYHbO9u66w/Nl4l8C5gIwHQMGM/STPtFM4ntCB3pYFsPDAukFBmOIuqoBBU52M9hOVDItcqZMr3HoTdExFwW+ecs=
-    on:
-      tags: true
-      repo: vinceallenvince/borderpalette
-  - provider: releases
-    api_key:
-      secure: AUOF4RRJisK8Uo2UwBWnJHLdjPasXejROFF38oQm/xBiXidVzj329+xw2sFqDp5aTsJsZiXQInLHkQv/fy1dgk38dNOjRqf8W3Dxe92+oRydVwkpQYZq8l1/1/l6I4ngwwjWBeGssiLKTSeMQCu+vNGc5GjCgtlHT0HH5fCdlm4=
-    file: release/borderpalette.min.js
-    on:
-      repo: vinceallenvince/borderpalette
+- provider: npm
+  email: vince@vinceallen.com
+  api_key:
+    secure: i9HGZBNzSWkf9Il1ehbMkrUyreqBgGG1czQYWNA68Kxiad/1F0CAi1MdeCZgNXTvXMn7KcAa4l+V0ynnFzlUYHbO9u66w/Nl4l8C5gIwHQMGM/STPtFM4ntCB3pYFsPDAukFBmOIuqoBBU52M9hOVDItcqZMr3HoTdExFwW+ecs=
+  on:
+    tags: true
+    repo: vinceallenvince/borderpalette
+- provider: releases
+  api_key:
+    secure: AUOF4RRJisK8Uo2UwBWnJHLdjPasXejROFF38oQm/xBiXidVzj329+xw2sFqDp5aTsJsZiXQInLHkQv/fy1dgk38dNOjRqf8W3Dxe92+oRydVwkpQYZq8l1/1/l6I4ngwwjWBeGssiLKTSeMQCu+vNGc5GjCgtlHT0HH5fCdlm4=
+  file: release/borderpalette.min.js
+  on:
+    repo: vinceallenvince/borderpalette
+env:
+  global:
+  - GH_REF: github.com/vinceallenvince/borderpalette.git
+  - secure: CfZSleR5b4xVYRD0T+XqW0+YZIA0XMTj50nAKkEkfcePusEbGI2v7xKlq8fNnqnC1DvKSlUjTyBwlF7eKNYmzPRGe2l06be8z0I3DmLJD6SUatw0DYQ0v9DyKp29bUDd76n4zvEK+RIqfMk+682/V+6o+TcJ6z9r4XAclqAHHLU=
