@@ -31,7 +31,7 @@ var BorderPalette = require('borderpalette');
 var palette = new BorderPalette();
 ```
 
-Add styles to your palette via addBorder(). Pass the min/max amounts plus the border style. The add function adds a random number between your min and max. In the example below, you are twice as likely to get a 'dotted' style from the palette. Notice you can also chain your addBorder() calls.
+Add styles to your palette via addBorder(). Pass the min/max amounts plus the border style. The function adds a random number between your min and max. In the example below, you are twice as likely to get a 'dotted' style from the palette. Notice you can also chain your addBorder() calls.
 
 ```
 pal.addBorder({
@@ -51,7 +51,7 @@ To retrieve a style from the palette, use getBorder().
 var style = pal.getBorder();
 ```
 
-In the browser, the module exposes a BorderPalette namespace.
+In the browser, the module exposes a BorderPalette class.
 
 ```
 <html>
