@@ -10,3 +10,10 @@ before_deploy: echo 'ready?'
 after_deploy:
 - echo 'done!'
 - ./deploy-gh-pages.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: AUOF4RRJisK8Uo2UwBWnJHLdjPasXejROFF38oQm/xBiXidVzj329+xw2sFqDp5aTsJsZiXQInLHkQv/fy1dgk38dNOjRqf8W3Dxe92+oRydVwkpQYZq8l1/1/l6I4ngwwjWBeGssiLKTSeMQCu+vNGc5GjCgtlHT0HH5fCdlm4=
+  file: release/borderpalette.min.js
+  on:
+    repo: vinceallenvince/borderpalette
