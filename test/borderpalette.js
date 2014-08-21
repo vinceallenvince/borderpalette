@@ -1,5 +1,4 @@
-var Burner = require('burner'),
-    test = require('tape'),
+var test = require('tape'),
     BorderPalette, obj;
 
 function beforeTest() {
