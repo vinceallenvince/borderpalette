@@ -27,7 +27,7 @@ You can also use the [standalone version](https://github.com/vinceallenvince/bor
 The module exports a BorderPalette class. In a nodejs project, you access it via:
 
 ```
-var BorderPalette = require('borderpalette').BorderPalette;
+var BorderPalette = require('borderpalette');
 var palette = new BorderPalette();
 ```
 

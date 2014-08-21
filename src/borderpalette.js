@@ -1,4 +1,4 @@
-Utils = require('drawing-utils-lib');
+var Utils = require('drawing-utils-lib');
 
 /**
  * Creates a new BorderPalette object.
