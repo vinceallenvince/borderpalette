@@ -56,11 +56,11 @@ In the browser, the module exposes a BorderPalette namespace.
 ```
 <html>
   <head>
-    <script src="scripts/borderpalette.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/borderpalette.min.js" type="text/javascript" charset="utf-8"></script>
   </head>
   <body>
     <script>
-      var pal = new BorderPalette.BorderPalette();
+      var pal = new BorderPalette();
       pal.addBorder({
         min: 2,
         max: 10,

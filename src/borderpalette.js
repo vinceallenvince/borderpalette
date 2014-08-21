@@ -1,5 +1,5 @@
 Utils = require('drawing-utils-lib');
-console.log(Utils);
+
 /**
  * Creates a new BorderPalette object.
  *
@@ -65,5 +65,5 @@ BorderPalette.prototype.getBorder = function() {
   throw new Error('BorderPalette.getBorder: You must add borders via addBorder() before using getBorder().');
 };
 
-module.exports.BorderPalette = BorderPalette;
+module.exports = BorderPalette;
 

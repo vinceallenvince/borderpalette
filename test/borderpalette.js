@@ -6,7 +6,7 @@ function beforeTest() {
 }
 
 test('load BorderPalette.', function(t) {
-  BorderPalette = require('../src/borderpalette').BorderPalette;
+  BorderPalette = require('../src/borderpalette');
   t.ok(BorderPalette, 'object loaded');
   t.end();
 });

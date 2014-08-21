@@ -171,7 +171,7 @@ Utils.capitalizeFirstLetter = function(string) {
 module.exports = Utils;
 },{}],2:[function(_dereq_,module,exports){
 Utils = _dereq_('drawing-utils-lib');
-console.log(Utils);
+
 /**
  * Creates a new BorderPalette object.
  *
@@ -237,7 +237,7 @@ BorderPalette.prototype.getBorder = function() {
   throw new Error('BorderPalette.getBorder: You must add borders via addBorder() before using getBorder().');
 };
 
-module.exports.BorderPalette = BorderPalette;
+module.exports = BorderPalette;
 
 
 },{"drawing-utils-lib":1}]},{},[2])
