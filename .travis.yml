@@ -30,4 +30,4 @@ deploy:
 env:
   global:
   - GH_REF: github.com/vinceallenvince/borderpalette.git
-  - secure: CfZSleR5b4xVYRD0T+XqW0+YZIA0XMTj50nAKkEkfcePusEbGI2v7xKlq8fNnqnC1DvKSlUjTyBwlF7eKNYmzPRGe2l06be8z0I3DmLJD6SUatw0DYQ0v9DyKp29bUDd76n4zvEK+RIqfMk+682/V+6o+TcJ6z9r4XAclqAHHLU=
+  - secure: gq5C6Gr30R5J5dk17HLpnw0vhV9c6vSaHH7bvXY2BWcUby/mgIHkJ9oUMhd1arU/KgAuNHgIioORqnyr+wCWqYF0y3nbiJNkMp3yK/898QnYGK2Ji2z3zIsugnwpyytcVShTmBp/S+Bl2aGCugOYMFk+dwlIZCXVouGS2WlF+G0=
